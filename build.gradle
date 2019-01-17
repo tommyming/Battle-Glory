@@ -15,12 +15,16 @@ repositories {
 
     maven {
         url "https://papermc.io/repo/repository/maven-public/" }
+    maven {
+        url "http://nexus.hc.to/content/repositories/pub_releases"
+    }
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly "org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT"
     compileOnly "com.destroystokyo.paper:paper-api:1.13.2-R0.1-SNAPSHOT"
+    compileOnly "net.milkbowl.vault:VaultAPI:1.7"
 }
 
 
